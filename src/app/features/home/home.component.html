@@ -1,0 +1,34 @@
+<header>
+  <mat-toolbar>
+    <div class="toolbar-container">
+      <a mat-button color="primary">
+        <div class="logo">
+          <lucide-icon [img]="pawIcon"></lucide-icon>
+          <span>Patas Felizes</span>
+        </div>
+      </a>
+
+      <button
+        mat-button
+        [matMenuTriggerFor]="mainMenu"
+        color="primary"
+        class="menu-btn"
+      >
+        <lucide-icon [img]="menuIcon"></lucide-icon>
+      </button>
+      <mat-menu #mainMenu="matMenu">
+        <button mat-menu-item href="">Link 1</button>
+        <button mat-menu-item href="">Link 2</button>
+        <button mat-menu-item href="">Link 3</button>
+        <button mat-menu-item href="">Link 4</button>
+      </mat-menu>
+
+      <nav class="nav-links">
+        <a mat-button href="">Link 1</a>
+        <a mat-button href="">Link 2</a>
+        <a mat-button href="">Link 3</a>
+        <a mat-button href="">Link 4</a>
+      </nav>
+    </div>
+  </mat-toolbar>
+</header>

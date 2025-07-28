@@ -1,0 +1,43 @@
+.toolbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    lucide-icon {
+      display: flex;
+    }
+
+    span {
+      font: var(--mat-sys-title-large);
+    }
+  }
+
+  .menu-btn {
+    lucide-icon {
+      display: flex;
+    }
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  @media (width >= 48rem) {
+    .nav-links {
+      display: flex;
+    }
+
+    .menu-btn {
+      display: none;
+    }
+  }
+}
