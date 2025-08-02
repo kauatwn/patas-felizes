@@ -1,3 +1,5 @@
+@use "@angular/material" as mat;
+
 .toolbar-container {
   display: flex;
   align-items: center;
@@ -38,6 +40,19 @@
 
     .menu-btn {
       display: none;
+    }
+  }
+}
+
+.hero {
+  background-color: #bae6fd;
+
+  .hero-content {
+    max-width: 64rem;
+    margin: 0 auto;
+
+    h1 {
+      margin: 0;
     }
   }
 }
