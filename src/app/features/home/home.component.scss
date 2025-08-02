@@ -41,3 +41,16 @@
     }
   }
 }
+
+.hero {
+  background-color: #bae6fd;
+
+  .hero-content {
+    max-width: 64rem;
+    margin: 0 auto;
+
+    h1 {
+      margin: 0;
+    }
+  }
+}
