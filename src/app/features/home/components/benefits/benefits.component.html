@@ -1,0 +1,26 @@
+<section class="benefits">
+  <div class="benefits-content">
+    <h2>Por que adotar com a Patas Felizes?</h2>
+    <p>
+      Nosso compromisso é garantir uma adoção responsável e feliz para você e
+      seu novo amigo
+    </p>
+
+    <div class="benefits-grid">
+      @for (benefit of benefits; track $index) {
+      <mat-card appearance="outlined">
+        <mat-card-header>
+          <div mat-card-avatar class="benefit-icon">
+            <lucide-icon [img]="benefit.icon"></lucide-icon>
+          </div>
+        </mat-card-header>
+
+        <mat-card-content>
+          <mat-card-title>{{ benefit.title }}</mat-card-title>
+          <p>{{ benefit.description }}</p>
+        </mat-card-content>
+      </mat-card>
+      }
+    </div>
+  </div>
+</section>
