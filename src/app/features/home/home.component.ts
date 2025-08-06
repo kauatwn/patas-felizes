@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {
@@ -16,6 +17,7 @@ import {
     LucideAngularModule,
     MatButtonModule,
     MatMenuModule,
+    MatCardModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
