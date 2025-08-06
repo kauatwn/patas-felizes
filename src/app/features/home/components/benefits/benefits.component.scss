@@ -1,0 +1,26 @@
+.benefits-content {
+  max-width: 64rem;
+  margin: 0 auto;
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    mat-card {
+      align-items: center;
+      text-align: center;
+
+      .benefit-icon {
+        lucide-icon {
+          display: flex;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+      }
+    }
+  }
+}
