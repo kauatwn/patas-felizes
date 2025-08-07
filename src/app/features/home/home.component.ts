@@ -9,6 +9,7 @@ import {
   Menu,
   PawPrint,
 } from 'lucide-angular';
+import { BenefitsComponent } from './components/benefits/benefits.component';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ import {
     MatButtonModule,
     MatMenuModule,
     MatCardModule,
+    BenefitsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
