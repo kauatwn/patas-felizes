@@ -1,3 +1,5 @@
+// @use "@angular/material" as mat;
+
 .toolbar-container {
   display: flex;
   align-items: center;
@@ -43,38 +45,59 @@
 }
 
 .hero {
-  background-color: #bae6fd;
-  padding: 6rem 0;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+  padding: 6rem 1rem;
 
   .hero-content {
     display: flex;
     max-width: 64rem;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
 
     .hero-text {
       display: flex;
       flex-direction: column;
       width: 50%;
 
-      .buttons {
-        margin-top: auto;
+      h1 {
+        margin: 0;
+        font-size: 3rem;
+        color: #1f2937;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: #4b5563;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
       }
     }
-
-    h1 {
-      margin: 0;
-    }
-  }
-
-  .hero-image {
-    background-color: wheat;
-    width: 300px;
-    height: 300px;
   }
 
   .buttons {
     display: flex;
     gap: 1rem;
+
+    a {
+      width: 100%;
+    }
+
+    // a:nth-child(2) {
+    //   @include mat.button-overrides(
+    //     (
+    //       filled-container-color: white,
+    //       filled-label-text-color: var(--mat-sys-primary),
+    //     )
+    //   );
+    // }
   }
+}
+
+img {
+  width: 399px;
+  height: 384px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
