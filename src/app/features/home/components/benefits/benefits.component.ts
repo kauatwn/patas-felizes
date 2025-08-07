@@ -1,6 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { HeartIcon, LucideAngularModule } from 'lucide-angular';
+import {
+  HandHeartIcon,
+  HeartIcon,
+  LucideAngularModule,
+  NotebookPenIcon,
+  ShieldCheckIcon,
+} from 'lucide-angular';
 
 @Component({
   selector: 'app-benefits',
@@ -21,19 +27,19 @@ export class BenefitsComponent {
       title: 'Parceria com ONGs',
       description:
         'Trabalhamos com as melhores ONGs da região para resgatar e cuidar dos animais.',
-      icon: HeartIcon,
+      icon: HandHeartIcon,
     },
     {
       title: 'Processo Simples',
       description:
         'Documentação facilitada e acompanhamento pós-adoção para garantir que tudo corra bem.',
-      icon: HeartIcon,
+      icon: NotebookPenIcon,
     },
     {
       title: 'Pets Saudáveis',
       description:
         'Todos os animais são vacinados, vermifugados e castrados antes da adoção.',
-      icon: HeartIcon,
+      icon: ShieldCheckIcon,
     },
   ];
 }
