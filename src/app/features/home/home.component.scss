@@ -44,10 +44,11 @@
 
 .hero {
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
-  padding: 6rem 1rem;
+  padding: 2rem 1rem;
 
   .hero-content {
     display: flex;
+    flex-direction: column;
     max-width: 64rem;
     margin: 0 auto;
     justify-content: space-between;
@@ -74,6 +75,7 @@
 
       .buttons {
         display: flex;
+        flex-direction: column;
         gap: 1rem;
 
         a {
@@ -84,14 +86,37 @@
 
     .hero-image {
       width: 100%;
-      aspect-ratio: 640 / 427;
+      height: 26rem;
+      position: relative;
       overflow: hidden;
       border-radius: 0.75rem;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
       img {
-        width: 100%;
-        height: auto;
+        object-fit: cover;
+        object-position: center 86%;
+      }
+    }
+  }
+
+  @media (width >= 48rem) {
+    padding: 4rem 1rem;
+
+    .hero-content .hero-text .buttons {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+
+  @media (width >= 64rem) {
+    padding: 6rem 1rem;
+
+    .hero-content {
+      flex-direction: row;
+
+      .hero-text .buttons {
+        flex-direction: row;
+        gap: 1rem;
       }
     }
   }
