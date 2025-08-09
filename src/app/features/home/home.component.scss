@@ -1,5 +1,3 @@
-// @use "@angular/material" as mat;
-
 .toolbar-container {
   display: flex;
   align-items: center;
@@ -54,11 +52,12 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 
     .hero-text {
       display: flex;
       flex-direction: column;
-      width: 50%;
+      width: 100%;
 
       h1 {
         margin: 0;
@@ -72,32 +71,28 @@
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
+
+      .buttons {
+        display: flex;
+        gap: 1rem;
+
+        a {
+          width: 100%;
+        }
+      }
     }
-  }
 
-  .buttons {
-    display: flex;
-    gap: 1rem;
-
-    a {
+    .hero-image {
       width: 100%;
+      aspect-ratio: 640 / 427;
+      overflow: hidden;
+      border-radius: 0.75rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
-
-    // a:nth-child(2) {
-    //   @include mat.button-overrides(
-    //     (
-    //       filled-container-color: white,
-    //       filled-label-text-color: var(--mat-sys-primary),
-    //     )
-    //   );
-    // }
   }
-}
-
-img {
-  width: 399px;
-  height: 384px;
-  object-fit: cover;
-  border-radius: 0.75rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
