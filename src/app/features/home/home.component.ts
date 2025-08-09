@@ -1,5 +1,4 @@
-import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
@@ -11,6 +10,7 @@ import {
   PawPrint,
 } from 'lucide-angular';
 import { BenefitsComponent } from './components/benefits/benefits.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @Component({
   selector: 'app-home',
@@ -20,11 +20,12 @@ import { BenefitsComponent } from './components/benefits/benefits.component';
     MatButtonModule,
     MatMenuModule,
     MatCardModule,
+    HeroComponent,
     BenefitsComponent,
-    NgOptimizedImage,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
   readonly pawIcon: LucideIconData = PawPrint;
