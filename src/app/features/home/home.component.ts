@@ -36,4 +36,10 @@ export class HomeComponent {
   readonly phoneIcon: LucideIconData = Phone;
   readonly mailIcon: LucideIconData = Mail;
   readonly mapPinIcon: LucideIconData = MapPin;
+
+  readonly footerContacts = [
+    { icon: this.mailIcon, text: 'contato@patasfelizes.com' },
+    { icon: this.phoneIcon, text: '(11) 1234-5678' },
+    { icon: this.mapPinIcon, text: 'São Paulo - SP' },
+  ];
 }
