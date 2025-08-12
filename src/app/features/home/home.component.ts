@@ -6,8 +6,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {
   LucideAngularModule,
   LucideIconData,
+  Mail,
+  MapPin,
   Menu,
   PawPrint,
+  Phone,
 } from 'lucide-angular';
 import { BenefitsComponent } from './components/benefits/benefits.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -30,4 +33,7 @@ import { HeroComponent } from './components/hero/hero.component';
 export class HomeComponent {
   readonly pawIcon: LucideIconData = PawPrint;
   readonly menuIcon: LucideIconData = Menu;
+  readonly phoneIcon: LucideIconData = Phone;
+  readonly mailIcon: LucideIconData = Mail;
+  readonly mapPinIcon: LucideIconData = MapPin;
 }
